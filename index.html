@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <!-- css -->
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css" class="rel">
+    <!-- adding the defer attribute to script files in the head makes them load after the main page and all css has been loaded  -->
+
+    <script src="./src/bootstrap/js/bootstrap.min.js" defer></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Car Rental Project</title>
+</head>
+<body>
+    <header id="hearder">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Logo</a>
+              <ul class="navbar-nav">
+                <li  class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Book Car</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active">Testimonal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact us</a>
+                </li> 
+                <li class="nav-item ">
+                    <a class="nav-link active  btn btn-warning border border-3-danger btn-signIn" href="#" data-bs-toggle="modal" data-bs-target="#myLogin">Sign in</a>
+                </li> 
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Have a ride with us</h1>
+                <h2 class="hero-subtitle">We offer you a range of good performing<br> and affordable cars</h2>
+
+                <button type="button" class="hero-button border border-5-white rounded-4">Explore</button>
+            </div>
+        </section>
+        
+        <section id="car-item">
+            <div class="bg-image"></div>
+            <div class="container">
+                <div class="row">
+                   <div class="col-sm-12 col-lg-12">
+                       <div class="contanier">
+                           <div class="row">
+                                <div class="card">
+                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" style="width: 100%;" id="card-top-image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" id="card-top-image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" id="card-top-image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                       <div class="contanier">
+                           <div class="row">
+                                <div class="card">
+                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" style="width: 100%;" id="card-top-image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" id="card-top-image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" id="card-top-image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>  
+                                    
+        </section>
+
+        <section id="test-monial">
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-sm-12 col-md-9 col-lg-9">
+                        <div class="container test-row">
+                            <div class="card test-card">
+                                <img src="assets/car-lists/logos/card-1.jpg" class="test-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem, ipsum.</h4>
+                                    <div id="test-text">
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate neque consequatur soluta totam nostrum iure.</p>
+                                    </div>
+                                    <button class="btn btn-info text-btn">View Profile</button>
+                                </div>
+                            </div>
+                            <div class="card test-card">
+                                <img src="assets/car-lists/logos/card-2.jpg" class="test-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum</h4>
+                                    <div id="test-text">
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque quod ipsum, fugiat temporibus a!</p>
+                                    </div>
+                                    <button class="btn btn-info text-btn">View Profile</button>
+                                </div>
+                            </div>
+                            <div class="card test-card">
+                                <img src="assets/car-lists/logos/card-3.jpg" class="test-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lorem ipsum</h4>
+                                    <div id="test-text">
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur vero minus consequuntur quia voluptates sequi..</p>
+                                    </div>
+                                    <button class="btn btn-info text-btn ps-4">View Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>             
+        </section>
+
+        <!-- ************** User Login form ************** -->
+        <div class="login-modal">
+            <div class="modal" id="myLogin">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- modal login header -->
+                        <div class="modal-header">
+                            <h3 class="modal-title">User Login</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- ************** Modal body ************** -->
+
+                        <div class="modal-body">
+                            <form class="was-validated needs-validation">
+                                <div>
+                                    <label for="email" class="form-label pt-3">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                                </div>
+                                <div>
+                                    <label for="pwd" class="form-label pt-3">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                                </div>
+                                <div class="form-check pt-3">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                    Remember me    
+                                    </label>
+                                </div>
+                                <div class="btn">
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                                <div class="register-form pt-2">
+                                    <p>Don't have an account?<a class="signUp-btn ps-2" href="#" data-bs-toggle="modal" data-bs-target="#signUp">Sign Up</a></p>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ************** User Register Modal Form ************** -->
+        <div class="signUp-modal">
+            <div class="modal" id="signUp">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">User Registration</h4>
+                            <button  type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="was-validated">
+                                <div>
+                                    <label for="fName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="fName" placeholder="First name..." required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                                </div>
+                                <div>
+                                    <label for="lName" class="form-label">Last-Name</label>
+                                    <input type="text" class="form-control" id="lName" placeholder="Last name..." required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                                </div>
+                                <div>
+                                    <label for="pwd" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="pwd1" placeholder="Password" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                                </div>
+                                <form>
+                                    <label for="pwd" class="form-label"> Confirm Password</label>
+                                    <input type="password" class="form-control" id="pwd2" placeholder="Confirm Password" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

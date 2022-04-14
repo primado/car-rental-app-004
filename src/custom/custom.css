@@ -1,0 +1,36 @@
+nav {
+    background-color: rgba(15, 161, 132, 0.85);
+}
+
+nav a {
+    color: white !important;
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav ul li a {
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: rgb(146, 25, 106) !important;
+}
+
+nav ul li a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: rgb(146, 25, 106);
+    position: absolute;
+    top: -.10em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+
+nav ul li a:hover::before {
+    transform: scale(1, 1);
+}
