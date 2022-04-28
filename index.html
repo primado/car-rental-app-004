@@ -13,7 +13,7 @@
     <script src="./src/bootstrap/js/bootstrap.min.js" defer></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Car Rental Project</title>
 </head>
@@ -55,112 +55,157 @@
                 <button type="button" class="hero-button border border-5-white rounded-4">Explore</button>
             </div>
         </section>
-        
-        <section id="car-item">
-            <div class="bg-image"></div>
-            <div class="container">
-                <div class="row">
-                   <div class="col-sm-12 col-lg-12">
-                       <div class="contanier">
-                           <div class="row">
-                                <div class="card">
-                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" style="width: 100%;" id="card-top-image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" id="card-top-image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" id="card-top-image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
-                                    </div>
-                                </div>
-                            </div>    
+
+
+        <!------------------------ Car Booking -------------------------->
+
+        <section id="booking-form">
+            <div class="main-block">
+                <h1>Book a Car</h1>
+                <form id="main-form" method="post">
+                    <div class="info">
+                        <input type="text" class="fname" placeholder="Full Name">
+                        <input type="text" placeholder="Email Address">
+                        <input type="text" placeholder="Phone Number">
+                        <input type="date" placeholder="Order date">
+                        <select>
+                            <option value="car-brand" disabled selected>Select Car Brand</option>
+                            <option value="yotata">Toyota</option>
+                            <option value="kia">Kia</option>
+                            <option value="kia">Kia</option>
+                        </select>
+                        <select>
+                            <option value="model" disabled selected>Select car model</option>
+                            <option value="toyota-1">Toyota 1</option>
+                            <option value="toyota-1">Toyota 2</option>
+                            <option value="toyota-1">Toyota 3</option>
+                            <option value="kia-1">kia-1</option>
+                            <option value="kia-2">kia-2</option>
+                            <option value="kia-3">kia-3</option>
+                            <option value="nissan-1">nissan-1</option>
+                            <option value="nissan-2">nissan-2</option>
+                            <option value="nissan-3">nissan-3</option>
+                        </select>
+                        <select>
+                            <option value="pay-options" disabled selected>Select Payment Method</option>
+                            <option value="cash">Cash method</option>
+                            <option value="momo-method">Pay via MoMo</option>
+                        </select>
+                    </div>
+                    <h3>Delivery Methods</h3>
+                    <div class="method">
+                        <div>
+                            <input type="radio" value="none" id="radioOne" name="method">
+                            <label for="radioOne" class="radio">For pick up</label>
                         </div>
-                       <div class="contanier">
-                           <div class="row">
-                                <div class="card">
-                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" style="width: 100%;" id="card-top-image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" id="card-top-image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" id="card-top-image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <input type="button" class="btn btn-info" value="Book" form="book-car">
-                                    </div>
-                                </div>
-                            </div>    
+                        <div>
+                            <input type="radio" value="none" id="radioTwo" name="method">
+                            <label for="radioTwo" class="radio">For delivery</label>
                         </div>
                     </div>
+                    <button type="button" class="book-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="car-item">
+            <div class="container">
+                <div id="car-card" class="card">
+                    <img src="assets/car-lists/2021-toyota-yaris-cross-3.jpg" alt="car-list-item">
+                    <div class="card-body bg-card">
+                        <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <input type="submit" class="btn btn-info" value="Book">
+                    </div>
                 </div>
-            </div>  
-                                    
+                <div id="car-card" class="card">
+                    <img src="assets/car-lists/benz.jpg" alt="car-list-item">
+                    <div class="card-body bg-card">
+                        <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <input type="submit" class="btn btn-info car-btn" value="Book">
+                    </div>
+                </div>
+                <div id="car-card" class="card">
+                    <img src="assets/car-lists/custom-img1.jpg" alt="car-list-item">
+                    <div class="card-body bg-card">
+                        <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <input type="submit" class="btn btn-info" value="Book">
+                    </div>
+                </div>
+                <div id="car-card" class="card">
+                    <img src="assets/car-lists/custom-img2.jpg" alt="car-list-item">
+                    <div class="card-body bg-card">
+                        <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <input type="submit" class="btn btn-info" value="Book">
+                    </div>
+                </div>
+                <div id="car-card" class="card">
+                    <img src="assets/car-lists/custom-img3.jpg" alt="car-list-item">
+                    <div class="card-body bg-card">
+                        <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <input type="submit" class="btn btn-info" value="Book">
+                    </div>
+                </div>
+                <div id="car-card" class="card">
+                    <img src="assets/car-lists/custom-img4.jpg" alt="car-list-item">
+                    <div class="card-body bg-card">
+                        <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <input type="submit" class="btn btn-info" value="Book">
+                    </div>
+                </div>
+                <div id="car-card" class="card">
+                    <img src="assets/car-lists/custom-img4.jpg" alt="car-list-item">
+                    <div class="card-body bg-card">
+                        <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <input type="submit" class="btn btn-info" value="Book">
+                    </div>
+                </div>
+                <div id="car-card" class="card">
+                    <img src="assets/car-lists/custom-img4.jpg" alt="car-list-item">
+                    <div class="card-body bg-card">
+                        <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <input type="submit" class="btn btn-info" value="Book">
+                    </div>
+                </div>
+            </div>     
         </section>
 
         <section id="test-monial">
+            <div class="test-header">
+                <h2>Our Customers Testimonials</h2>
+            </div>
             <div class="container pt-3">
-                <div class="row">
-                    <div class="col-sm-12 col-md-9 col-lg-9">
-                        <div class="container test-row">
-                            <div class="card test-card">
-                                <img src="assets/car-lists/logos/card-1.jpg" class="test-img">
-                                <div class="card-body">
-                                    <h4 class="card-title">Lorem, ipsum.</h4>
-                                    <div id="test-text">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate neque consequatur soluta totam nostrum iure.</p>
-                                    </div>
-                                    <button class="btn btn-info text-btn">View Profile</button>
-                                </div>
-                            </div>
-                            <div class="card test-card">
-                                <img src="assets/car-lists/logos/card-2.jpg" class="test-img">
-                                <div class="card-body">
-                                    <h4 class="card-title">Lorem ipsum</h4>
-                                    <div id="test-text">
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque quod ipsum, fugiat temporibus a!</p>
-                                    </div>
-                                    <button class="btn btn-info text-btn">View Profile</button>
-                                </div>
-                            </div>
-                            <div class="card test-card">
-                                <img src="assets/car-lists/logos/card-3.jpg" class="test-img">
-                                <div class="card-body">
-                                    <h4 class="card-title">Lorem ipsum</h4>
-                                    <div id="test-text">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur vero minus consequuntur quia voluptates sequi..</p>
-                                    </div>
-                                    <button class="btn btn-info text-btn ps-4">View Profile</button>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card test-card">
+                    <img src="assets/car-lists/logos/card-1.jpg" class="test-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Lorem, ipsum.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aperiam reprehenderit optio. Eius, reiciendis earum.</p>
+                        <input type="button" value="View Profile" class="btn btn-info monial-btn">
                     </div>
-                </div>        
+                </div>       
+                <div class="card test-card">
+                    <img src="assets/car-lists/logos/card-2.jpg" class="test-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Lorem, ipsum.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aperiam reprehenderit optio. Eius, reiciendis earum.</p>
+                        <input type="button" value="View Profile" class="btn btn-info monial-btn">
+                    </div>
+                </div>       
+                <div class="card test-card">
+                    <img src="assets/car-lists/logos/card-3.jpg" class="test-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Lorem, ipsum.</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aperiam reprehenderit optio. Eius, reiciendis earum.</p>
+                        <input type="button" value="View Profile" class="btn btn-info monial-btn">
+                    </div>
+                </div>       
             </div>             
         </section>
 
