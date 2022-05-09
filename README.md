@@ -1,11 +1,6 @@
 # car-rental-app-004
 
-I'm happy that the project got push to this repo.
+The index.html needs to be worked upon.
+The appearance of the of the home page needs to change.
 
-Tasks to complete:
-  ~ Booking car form.
-  ~ Contact page
-  ~ About page
-  ~ Footer
-
-This project needs to be completed my 10th May.
+It must me completed on Wednesday May 11.
